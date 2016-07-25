@@ -1,20 +1,21 @@
 <?php 
 
+require_once('vendor/facebook/php-sdk-v4/src/Facebook/autoload.php');
 require_once('vendor/autoload.php');
 
 $app_id     = '1741328312763472';
 $app_secret = '517dc1585b628ab300fc79673fae06fd';
-
-$token      = 'EAAYvupeFBFABAN3wl9Ipa6ohZCH2b2VJQ2NDkScdi7THRKi8H19qHMZCZCPtPII45DZByna58u9dqaEFaWkmLMzOoP1WIfsH83ZCFHKPtvVAmu3x8JUWS3LXVhUetZAsbCdHJnZBkC9l9RZApSZCPQ9rhe3LZAFkxW9k9lsYUKbxS6FgZDZD';
+$token      = 'EAAYvupeFBFABAGpqhIu9YaspndjxphKZAhVbF7z5RhziMtMZCL5aHsDLjjwSuSKFummnuyJDeIeUu6FdrnoHq3XmZBUWkZBytzCZBSGj67svPlEFWn2a1kZB2Gp6vMw5sno3BUANYqiDe83trV8cZATe6G1GhC5UeSwphjj1YsysAZDZD';
 
 $fb = new Facebook\Facebook([
-	'app_id'                => $app_id,
-	'app_secret'            => $app_secret,
+	'app_id'     => $app_id,
+	'app_secret' => $app_secret,
 ]);
 
 $data = [
 	'message' => 'your message',
-	'link'    => 'http://devvui.com/'
+	// 'link'    => 'http://yourlink.com/',
+	'picture '=> realpath("test.gif")
 ];
 
 try {
