@@ -7,10 +7,10 @@ composer require facebook/php-sdk-v4
 
 ## Get app_id and app_secret
 
-https://developers.facebook.com/apps/<app_id>/dashboard/
+https://developers.facebook.com/apps/< app_id >/dashboard/
 
-app_id     : <app_id>
-app_secret : <app_secret>
+app_id     : < app_id >
+app_secret : < app_secret > 
 
 ## Get page access token
 
